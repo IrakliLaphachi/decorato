@@ -1,0 +1,408 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.sliderContainer{
+    width: 100%;
+    overflow-x:hidden;
+}
+.banner1,.banner2,.banner3,.banner4,.banner5,.banner6,.banner7,.banner8,.banner9,.banner10{
+    height: 100vh;
+    width: 100%;
+    position: static;
+    left: 0;
+    top: 0;
+}
+img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: zoom-out 15s linear infinite;
+}
+@keyframes zoom-out{
+    100%{
+        width: 110%;
+    }
+}
+.text-box{
+    width: 600px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: #fff;
+}
+.text-box h1{
+    margin-bottom: 40px;
+}
+.text-box p{
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 80px;
+}
+.text-box span{
+    background: red;
+    height: 1px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+}
+.banner1{
+    animation: slide1 12s linear;
+}
+.banner2{
+    animation: slide2 12s linear;
+}
+.banner3{
+    animation: slide3 12s linear;
+}
+.banner4{
+    animation: slide4 12s linear;
+}
+.banner5{
+    animation: slide5 12s linear;
+}
+.banner6{
+    animation: slide6 12s linear;
+}
+.banner7{
+    animation: slide7 12s linear;
+}
+.banner8{
+    animation: slide8 12s linear;
+}
+.banner9{
+    animation: slide9 12s linear;
+}
+.banner10{
+    animation: slide10 12s linear;
+}
+
+@keyframes slide1{
+    0%{
+        display: block;
+        visibility: visible;
+    }
+    10%{
+        display: none;
+    }
+    20%{        
+        display: none;
+    }
+    30%{        
+        display: none;
+    }
+    40%{        
+        display: none;
+    }
+    50%{        
+        display: none;
+    }
+    60%{        
+        display: none;
+    }
+    70%{        
+        display: none;
+    }
+    80%{        
+        display: none;
+    }
+    90%{        
+        display: none;
+    }
+    100%{        
+        display: none;
+    }
+}
+@keyframes slide2{
+    0%{
+        display: none;
+    }
+    10%{
+        display: block;
+        visibility: visible;
+    }
+    20%{        
+        display: none;
+    }
+    30%{        
+        display: none;
+    }
+    40%{        
+        display: none;
+    }
+    50%{        
+        display: none;
+    }
+    60%{        
+        display: none;
+    }
+    70%{        
+        display: none;
+    }
+    80%{        
+        display: none;
+    }
+    90%{        
+        display: none;
+    }
+    100%{        
+        display: none;
+    }
+}
+@keyframes slide3{
+    0%{
+        display: none;
+    }
+    10%{
+        display: none;
+    }
+    20%{        
+        display: block;
+        visibility: visible;
+    }
+    30%{        
+        display: none;
+    }
+    40%{        
+        display: none;
+    }
+    50%{        
+        display: none;
+    }
+    60%{        
+        display: none;
+    }
+    70%{        
+        display: none;
+    }
+    80%{        
+        display: none;
+    }
+    90%{        
+        display: none;
+    }
+    100%{        
+        display: none;
+    }
+}
+@keyframes slide4{
+    0%{
+        display: none;
+    }
+    10%{
+        display: none;
+    }
+    20%{        
+        display: none;
+    }
+    30%{        
+        display: block;
+        visibility: visible;
+    }
+    40%{        
+        display: none;
+    }
+    50%{        
+        display: none;
+    }
+    60%{        
+        display: none;
+    }
+    70%{        
+        display: none;
+    }
+    80%{        
+        display: none;
+    }
+    90%{        
+        display: none;
+    }
+    100%{        
+        display: none;
+    }
+}
+@keyframes slide5{
+    0%{
+        display: none;
+    }
+    10%{
+        display: none;
+    }
+    20%{        
+        display: none;
+    }
+    30%{        
+        display: none;
+    }
+    40%{        
+        display: block;
+        visibility: visible;
+    }
+    50%{        
+        display: none;
+    }
+    60%{        
+        display: none;
+    }
+    70%{        
+        display: none;
+    }
+    80%{        
+        display: none;
+    }
+    90%{        
+        display: none;
+    }
+    100%{        
+        display: none;
+    }
+}
+@keyframes slide6{
+    0%{
+        display: none;
+    }
+    10%{
+        display: none;
+    }
+    20%{        
+        display: none;
+    }
+    30%{        
+        display: none;
+    }
+    40%{        
+        display: none;
+    }
+    50%{        
+        display: block;
+        visibility: visible;
+    }
+    60%{        
+        display: none;
+    }
+    70%{        
+        display: none;
+    }
+    80%{        
+        display: none;
+    }
+    90%{        
+        display: none;
+    }
+    100%{        
+        display: none;
+    }
+}
+@keyframes slide8{
+    0%{
+        display: none;
+    }
+    10%{
+        display: none;
+    }
+    20%{        
+        display: none;
+    }
+    30%{        
+        display: none;
+    }
+    40%{        
+        display: none;
+    }
+    50%{        
+        display: none;
+    }
+    60%{        
+        display: none;
+    }
+    70%{        
+        display: block;
+        visibility: visible;
+    }
+    80%{        
+        display: none;
+    }
+    90%{        
+        display: none;
+    }
+    100%{        
+        display: none;
+    }
+}
+@keyframes slide9{
+    0%{
+        display: none;
+    }
+    10%{
+        display: none;
+    }
+    20%{        
+        display: none;
+    }
+    30%{        
+        display: none;
+    }
+    40%{        
+        display: none;
+    }
+    50%{        
+        display: none;
+    }
+    60%{        
+        display: none;
+    }
+    70%{        
+        display: none;
+    }
+    80%{        
+        display: block;
+        visibility: visible;
+    }
+    90%{        
+        display: none;
+    }
+    100%{        
+        display: none;
+    }
+}
+@keyframes slide10{
+    0%{
+        display: none;
+    }
+    10%{
+        display: none;
+    }
+    20%{        
+        display: none;
+    }
+    30%{        
+        display: none;
+    }
+    40%{        
+        display: none;
+    }
+    50%{        
+        display: none;
+    }
+    60%{        
+        display: none;
+    }
+    70%{        
+        display: none;
+    }
+    80%{        
+        display: none;
+    }
+    90%{        
+        display: block;
+        visibility: visible;
+    }
+    100%{        
+        display: none;
+    }
+}
+
+.item1{
+    position: absolute;
+}

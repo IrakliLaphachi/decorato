@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/e.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq1">
+        <button class="accordion">
+            რატომ დეკორატო?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p id="content">თუ ეძებთ ნებისმიერი სახის დეკორატიულ მცენარეს თქვენი სივრცისა თუ ბაღის გასალამაზებლად პასუხია- დეკორატო.</p>
+            <br>
+            <p id="content">ჩვენთან არის ყველაზე ხარისხიანი პროდუქცია, ხელსაყრელი ფასები და დიდი არჩევანი.</p>
+        </div>
+      </div>
+
+      <div class="faq1">
+        <button class="accordion">
+            როგორ ავირჩიოთ მცენარე?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p id="content">სწორად არჩეული მცენარე სიცოცხლეს და სილამაზეს მატებს თქვენს გარემოს. იქნება ეს მარადმწვანე ბალახი თუ მრავალსაუკუნოვანი ზეთისხილი. </p>
+            <br>
+            <p id="content">ჩვენი გუნდი დაგეხმარებათ თქვენი ეზოს კეთილმოწყობაში.</p>
+        </div>
+      </div>
+
+      <div class="faq1">
+        <button class="accordion">
+            შესაძლებელია თუ არა მცენარეების შეკვეთა?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p id="content">სურვილის შემთხვევაში ნებისმიერი მცენარის შეკვეთა, ჩამოტანა, თუ ტრანსპორტირება არის შესაძლებელი.</p>
+        </div>
+      </div>
+
+      <div class="faq1">
+        <button class="accordion">
+            გაქვთ თუარა ტრანსპორტირების და დარგვის მომსახურება?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p id="content">გვაქვს ადგილზე მიწოდება და დარგვის მომსახურება.</p>
+        </div>
+      </div>
+
+      <div class="faq1">
+        <button class="accordion">
+            თქვენთან ნაყიდი მცენარეების დარგვა როდისაა შესაძლებელი?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p id="content">წელიწადის ნებისმიერ დროს, რადგან გაყიდვაში არსებული მცენარეები დაფესვიანებულია ქოთანში.</p>
+        </div>
+      </div>
+
+      <div class="faq1">
+        <button class="accordion">
+            შესაძლებელია თუ არა კონსულტაციის მიღება?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p id="content">კონსულტაცია შესაძლებელია როგორც ტელეფონით ისევე ადგილზე.</p>
+        </div>
+      </div>
+      
+      <div class="faq1">
+        <button class="accordion">
+            დაინტერესების შემთხვევაში როგორ დაგიკავშირდეთ?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p id="content">დარეკეთ ტელელეფონზე: 597 30 30 73</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

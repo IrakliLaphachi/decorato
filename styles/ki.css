@@ -1,0 +1,59 @@
+/* Style for the button */
+.button {
+display: inline-block;
+padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Style for the modal */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+        padding-top: 50px;
+    }
+
+    /* Modal content */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 600px;
+    }
+
+    /* Image inside modal */
+    .modal-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Close button */
+    .close {
+        color: #fff;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 30px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #ccc;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    #rame{
+        background-color: white;
+    }

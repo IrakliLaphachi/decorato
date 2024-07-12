@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Grid</title>
+  <link rel="stylesheet" href="./styles/rame.css">
+</head>
+<body>
+  <div class="grid-container" id="gridContainer">
+  </div>
+
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <script>
+    // Fetching the JSON file
+    fetch('./scripts/data.json')
+      .then(response => response.json())
+      .then(data => {
+        const gridContainer = document.getElementById('gridContainer');
+
+        data.forEach(product => {
+          const gridItem = document.createElement('div');
+          gridItem.classList.add('grid-item');
+          
+          const img = document.createElement('img');
+          img.src = product.image;
+          img.alt = product.name;
+
+          const productName = document.createElement('h2');
+          productName.textContent = product.name;
+
+          const button = document.createElement('button');
+          button.textContent = 'View Description';
+          button.addEventListener('click', () => {
+            document.getElementById('modalDescription').textContent = product.description;
+            document.getElementById('myModal').style.display = 'block';
+          });
+
+          gridItem.appendChild(img);
+          gridItem.appendChild(productName);
+          gridItem.appendChild(button);
+
+          gridContainer.appendChild(gridItem);
+        });
+
+        // Close the modal
+        document.getElementsByClassName('close')[0].addEventListener('click', () => {
+          document.getElementById('myModal').style.display = 'none';
+        });
+
+        // Close the modal when clicking outside the modal content
+        window.addEventListener('click', (event) => {
+          const modal = document.getElementById('myModal');
+          if (event.target == modal) {
+            modal.style.display = 'none';
+          }
+        });
+      })
+      .catch(error => console.error('Error fetching products:', error));
+  </script>
+</body>
+</html>
