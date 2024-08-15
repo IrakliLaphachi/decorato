@@ -32,7 +32,9 @@ body{
     color: var(--gridItemColor);
     justify-content: center;
     align-items: center;
-    /* position: fixed; */
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .item2 {
@@ -91,7 +93,8 @@ nav{
 }
 
 .active {
-    color: #ffffff
+    color: #ffffff;
+    background: #228B22 ;
 }
 .pages:after{
     content: "";
@@ -331,9 +334,13 @@ ul{
 	background-color: #ffffff;
 }
 
-
+@media (max-width:450px){
+    .gridTable{
+        grid-template-columns: auto;
+    }
+}
 /*responsive*/
-@media(max-width: 767px){
+/* @media(max-width: 767px){
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
@@ -343,4 +350,50 @@ ul{
   .footer-col{
     width: 100%;
 }
+} */
+
+@media (max-width: 320px) {
+    .slider .slide {
+        height: 50vh; /* Adjust slide height for smaller screens */
+    }
+
+    .sauketeso {
+        flex-direction: column; /* Stack slogan items vertically */
+        gap: 20px; /* Add spacing between slogan items */
+    }
+
+    .slogani {
+        width: 100%; /* Full width for slogan items */
+        text-align: center; /* Center align text */
+    }
+
+    .footer-col {
+        width: 100%; /* Full width for footer columns */
+        margin-bottom: 30px; /* Add spacing between footer columns */
+    }
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .footer-col {
+        width: 50%; /* Two columns in footer */
+    }
+
+    .footer-col:nth-child(2),
+    .footer-col:nth-child(3) {
+        margin-top: 30px; /* Adjust margin for footer columns */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .footer-col {
+        width: 25%; /* Four columns in footer */
+    }
+
+    .slider .slide {
+        height: 80vh; /* Adjust slide height for better visibility */
+    }
+}
+
+
+
+

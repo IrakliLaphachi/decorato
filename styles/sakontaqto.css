@@ -24,7 +24,7 @@ nav{
     gap: 40px;
 }
 
-#pages{
+.pages{
     position: relative;
     text-decoration: none;
     font-family: 'Poppins',sans-serif;
@@ -34,7 +34,7 @@ nav{
     padding: 0 10px;
 }
 
-#pages:after{
+.pages:after{
     content: "";
     position: absolute;
     background-color: white;
@@ -44,12 +44,20 @@ nav{
     bottom: -10px;
     transition: 0.3s;
 }
+.active {
+    color: #ffffff;
+    background-color: green;
+}
 
-#pages:hover{
+.active{
+    background: #228B22 ;
+}
+
+.pages:hover{
     color: #ffffff;
 }
 
-#pages:hover:after{
+.pages:hover:after{
     width: 100%;
 }
 
@@ -196,3 +204,4 @@ ul{
     width: 100%;
 }
 }
+

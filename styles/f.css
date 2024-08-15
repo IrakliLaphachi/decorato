@@ -24,7 +24,7 @@ nav{
     gap: 40px;
 }
 
-#pages{
+.pages{
     position: relative;
     text-decoration: none;
     font-family: 'Poppins',sans-serif;
@@ -34,7 +34,7 @@ nav{
     padding: 0 10px;
 }
 
-#pages:after{
+.pages:after{
     content: "";
     position: absolute;
     background-color: white;
@@ -45,11 +45,20 @@ nav{
     transition: 0.3s;
 }
 
-#pages:hover{
+.activee {
+    color: #ffffff;
+    background: #228B22 ;
+}
+
+.activee{
+    background: #228B22 ;
+}
+
+.pages:hover{
     color: #ffffff;
 }
 
-#pages:hover:after{
+.pages:hover:after{
     width: 100%;
 }
 
@@ -63,7 +72,7 @@ nav{
     top: 50%;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
+    font-size: 25px;
 }
 #chvenShesaxebText1{
     display: flex;
