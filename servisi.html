@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="სანერგე ზღვაზე, sanerge zgvaze, Nursery on the sea, სანერგე თბილისის ზღვაზე, sanerge tbilisis zgvaze, Nursery on the sea of Tbilisi, დეკორატო, decorato, Decorato, ზეთისხილის ბონსაი, zetisxilis bonsai, olive bonsai, ნერგები, nergebi, seedlings, ნერგები თბილისში, nergebi tbilisshi, Seedlings in Tbilisi, მცენარეები, mcenareebi, plants, გამწვანება, gamwvaneba, greenery, მცენარის მოვლა პატრონობა, mcenaris movla patronoba, plant maintenance, ხე მცენარეების ტრანსპორტირება ჩარგვა, xe mcenareebis transportireba chargva, Transportation and planting of trees and plants, მოვლა პატრონობა, მონიტორინგი, პროფილაქტიკა, movla, patronoba, monitoringi, profilaqtika, maintenance, monitoring, prevention, იშვიათი სახეობის მცენარეების შეკვეთა-ჩამოტანა, Order and delivery of rare species of plants, ბალახის საფარის მოწყობის სამუშაოები, Grass cover arrangement works, მცენარეთა გასხვლა, დაბელვა, კრეჭვა, Pruning, weeding, picking of plants, ბაღის კეთილმოწყობა, Garden landscaping, ტუიები, Thuja tuiebi, კვიპაროსები kviparosebi, ცოცხალი ღობე, დეკორატო ზღვა zgvis sanerge, დენდრო პროექტი axali sanerge zgvaze dendro proeqti, მარწყვის ხე arbutus">
         <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./styles/servisi.css">
         <title></title>
     </head>
@@ -15,8 +16,8 @@
             </div>
             <div class="item1">
                 <header>
-                    <div>
-                        <nav>
+                    <div class="navContainer">
+                        <nav class="nav">
                             <a class="pages" href="./mtavari.html">მთავარი</a>
                             <a class="active pages" href="./servisi.html">სერვისი</a>
                             <a class="pages" href="./production.html">პროდუქცია</a>
@@ -25,30 +26,43 @@
                             <a class="pages" href="sakontaqto.html">საკონტაქტო</a>
                         </nav>
                     </div>
+                    <div class="topnav">
+                        <a href="./mtavari.html" class="active">მთავარი</a>
+                        <div id="myLinks">
+                          <a href="./servisi.html">სერვისი</a>
+                          <a href="./production.html">პროდუქცია</a>
+                          <a href="./chvenShesaxeb.html">ჩვენ შესახებ</a>
+                          <a href="./sakontaqto.html">საკონტაქტო</a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
                 </header>
             </div>
             <div class="item2">
+                <h2 class="gtavazobt">ჩვენ გთავაზობთ:</h2>
                 <div class="servisi">
                         <div class="servisisGverdi">
                             <img id="servisisFoto" width="460" height="660" src="./images/servis.jpg" >
-                            <table > 
+                            <table class="shetavazebebi"> 
                                 <tr> 
-                                    <td id="secondLine">დენდრო პროექტების გაკეთება</td>   
+                                    <td class="shetavazeba">დენდრო პროექტების გაკეთება</td>   
                                 </tr> 
                                 <tr> 
-                                    <td id="firstLine">ხე-მცენარეების ტრანსპორტირება-ჩარგვა</td>   
+                                    <td class="shetavazeba">ხე-მცენარეების ტრანსპორტირება-ჩარგვა</td>   
                                 </tr> 
                                 <tr> 
-                                    <td id="secondLine">მოვლა-პატრონობა, მონიტორინგი,  პროფილაქტიკა</td> 
+                                    <td class="shetavazeba">მოვლა-პატრონობა, მონიტორინგი, პროფილაქტიკა</td> 
                                 </tr> 
                                 <tr> 
-                                    <td id="thirdLine">იშვიათი სახეობის მცენარეების შეკვეთა-ჩამოტანა</td> 
+                                    <td class="shetavazeba">იშვიათი სახეობის მცენარეების შეკვეთა-ჩამოტანა</td> 
                                 </tr> 
                                 <tr> 
-                                    <td id="fourthLine">ბალახის საფარის მოწყობის სამუშაოები</td> 
+                                    <td class="shetavazeba">ბალახის საფარის მოწყობის სამუშაოები</td> 
                                 </tr> 
                                 <tr> 
-                                    <td id="fifthLine">მცენარეთა გასხვლა, დაბელვა, კრეჭვა</td> 
+                                    <td class="shetavazeba">მცენარეთა გასხვლა, დაბელვა, კრეჭვა</td> 
                                 </tr> 
                             </table> 
                         </div>
@@ -82,5 +96,6 @@
             </div>
         </div>
         <!-- <div class="slider"></div> -->
+        <script src="./scripts/nav.js"></script>
     </body>
 </html>
