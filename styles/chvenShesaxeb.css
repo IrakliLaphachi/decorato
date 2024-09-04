@@ -267,7 +267,7 @@ ul{
     }
 
     /* hidden nav */
-    .nav {
+    nav {
         display: none;
     }
     .topnav {
@@ -303,9 +303,4 @@ ul{
         color: white;
         height: 50px;
     }
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
 }
