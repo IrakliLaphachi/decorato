@@ -350,7 +350,7 @@ ul{
 @media (max-width:768px){
     /* hidden nav */
     nav {
-        display: none;
+        display: none!important;
     }
     
     .topnav {
